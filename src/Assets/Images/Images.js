@@ -22,6 +22,13 @@ import SortIcon from './SortIcon.png'
 import Splashbanner from './Splashbanner.png'
 import HomeBanner from './HomeBanner.png'
 import ProfilePicture from './ProfilePicture.png'
+import ChapterCover from './ChapterCover.png'
+import PauseButton from './PauseButton.png'
+import PlayButton from './PlayButton.png'
+import NextAudio from './NextAudio.png'
+import BackAudio from './BackAudio.png'
+import JumbleAudio from './ShuffleAudio.png'
+import LoopAudio from './LoopAudio.png'
 
 
 export const Images ={
@@ -48,5 +55,12 @@ SidemenuLogo:SidemenuLogo,
 SortIcon:SortIcon,
 Splashbanner:Splashbanner,
 HomeBanner:HomeBanner,
-ProfilePicture:ProfilePicture
+ProfilePicture:ProfilePicture,
+ChapterCover:ChapterCover,
+JumbleAudio:JumbleAudio,
+PlayButton:PlayButton,
+PauseButton:PauseButton,
+NextAudio:NextAudio,
+BackAudio:BackAudio,
+LoopAudio:LoopAudio
 }

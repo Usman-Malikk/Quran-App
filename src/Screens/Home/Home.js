@@ -2,9 +2,9 @@ import { View, Text, Image, TouchableOpacity, Alert, ScrollView, FlatList } from
 import React from 'react'
 import { Images } from '../../Assets/Images/Images'
 import { Colors } from '../../Assets/Colors/Colors'
-import Listing from '../../Components/Listing'
+import Listing from '../../Components/Listing/ChapterListing'
 import { DummyData } from '../../DummyData'
-import TopTabs from '../../Components/TopTabs'
+import TopTabs from '../../Components/TopTabs/HomeTabs'
 // import { Entypo } from '@expo/vector-icons';
 
 const Home = () => {
@@ -16,11 +16,6 @@ const Home = () => {
         <Image style={{ width: '100%', height: 200, objectFit: "contain" }} source={Images.HomeBanner} />
       </View>
       <TopTabs/>
-      {/* <FlatList
-        data={DummyData.chapters}
-        renderItem={({item}) => <Listing data={item} />}
-        keyExtractor={item => item.id}
-      /> */}
     </View>
   )
 }
