@@ -20,7 +20,7 @@ export default function CustomDrawer(props) {
                         {/* <Text style={{ color: "white", textAlign: 'center' }}>Hello world</Text> */}
 
                         <Image source={Images.ProfilePicture} style={{width:100,height:100,objectFit:"contain",marginLeft:-10}}/>
-                        <Text style={{marginTop:-20,marginBottom:20,marginLeft:10,fontWeight:500,color:Colors.MainBlue,fontSize:20}}>Muhammad Usman </Text>
+                        <Text style={{marginTop:-20,marginBottom:20,marginLeft:10,fontWeight:500,color:Colors.MainBlue,fontSize:20}}>User </Text>
                     </TouchableOpacity>
 
                 </ImageBackground>

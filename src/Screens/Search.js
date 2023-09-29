@@ -11,7 +11,7 @@ export default function Search() {
         <TextInput
         placeholder='Search Chapters'
         placeholderTextColor="#f1f2f3" 
-          style={{ backgroundColor: '#121931', height: 50, color: "white", flex: 1, fontSize: 18 }}
+          style={{ backgroundColor: '#121931', height: 50, color: "white", flex: 1, fontSize: 18,paddingHorizontal:10 }}
         />
         <TouchableOpacity style={{ backgroundColor: Colors.MainBlue,display:'flex',alignItems:"center",backgroundColor:'#f1f2f3',justifyContent:'center',height:50,width:60 }}>
           <Image source={Images.SearchIcon} />
