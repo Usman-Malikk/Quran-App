@@ -16,17 +16,12 @@ const Tab = createMaterialTopTabNavigator();
 
 export default function Detailtabs({ id }) {
     const [RecitationdData, setRecitationdData] = useState([])
+    const [ArabicRecitaion, setArabicRecitaion] = useState([])
     const [description, setDescription] = useState()
     const [AudioData, setAudioData] = useState()
-    const [ArabicRecitaion, setArabicRecitaion] = useState([])
     const dispatch = useDispatch()
 
-    const getVerses = async () => {
-        const result = await getChapterRecitation(dispatch, id)
-        if (result.status === 200) {
-            setRecitationdData(result?.data?.verses)
-        }
-    }
+   
     const chapterAudio = async () => {
         const result = await getChapterAudio(dispatch, id)
         if (result.status === 200) {
@@ -44,6 +39,12 @@ export default function Detailtabs({ id }) {
         const result = await getChapterRecitationInArabic(dispatch,id)
         if (result.status === 200) {
            setArabicRecitaion(result?.data?.verses)
+        }
+    }
+    const getVerses = async () => {
+        const result = await getChapterRecitation(dispatch, id)
+        if (result.status === 200) {
+            setRecitationdData(result?.data?.verses)
         }
     }
     useEffect(() => {

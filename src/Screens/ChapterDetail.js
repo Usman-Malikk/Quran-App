@@ -38,8 +38,7 @@ export default function ChapterDetail({ route }) {
         </View>
         <Image source={Images.Bismillah} />
       </ImageBackground>
-
-      <Detailtabs id={item?.id}/>
+      <Detailtabs  id={item?.id}/>
     </View>
   )
 }

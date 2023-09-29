@@ -29,6 +29,17 @@ import NextAudio from './NextAudio.png'
 import BackAudio from './BackAudio.png'
 import JumbleAudio from './ShuffleAudio.png'
 import LoopAudio from './LoopAudio.png'
+import Ruku from './Ruku.jpg'
+import prayerBG from './SalahBG.png'
+import NightPrayer from './nightPrayBG.png'
+import RadingQuran from './readingQuranBg.png'
+import CoolFamilyBG from './coolFamilyBanner.png'
+import DuharNamaz from './DuhurNamaz.png'
+import cloudyNights from './cloudy-night.png'
+import Sunrise from './sunrise.png'
+import Clouds from './Clouds.png'
+import SettingsUnactive from './SettingsUnactive.png'
+import SettingsActive from './SettingsActive.png'
 
 
 export const Images ={
@@ -62,5 +73,16 @@ PlayButton:PlayButton,
 PauseButton:PauseButton,
 NextAudio:NextAudio,
 BackAudio:BackAudio,
-LoopAudio:LoopAudio
+LoopAudio:LoopAudio,
+Ruku:Ruku,
+prayerBG:prayerBG,
+NightPrayer:NightPrayer,
+CoolFamilyBG:CoolFamilyBG,
+RadingQuran:RadingQuran,
+Sunrise:Sunrise,
+DuharNamaz:DuharNamaz,
+Clouds:Clouds,
+cloudyNights:cloudyNights,
+SettingsActive:SettingsActive,
+SettingsUnactive:SettingsUnactive
 }

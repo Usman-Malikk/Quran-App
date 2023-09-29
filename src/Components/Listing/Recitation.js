@@ -7,7 +7,7 @@ import { onLoading, onLoadingOff } from '../../Redux/Slices/loaderSlice'
 export default function Recitation({ data, ArabicRecitaion }) {
   const dispatch = useDispatch()
   return (
-    <ScrollView style={{ backgroundColor: Colors.MainBlue }}>
+    <ScrollView style={{ backgroundColor: Colors.MainBlue, }}>
       {
         data?.map((item, index) => {
           if (index == 0) {

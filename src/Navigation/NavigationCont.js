@@ -15,6 +15,10 @@ import { DrawerActions } from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux'
 import ChapterDetail from '../Screens/ChapterDetail';
 import Search from '../Screens/Search';
+import Prayer from '../Screens/Prayer';
+import Dua from '../Screens/Dua';
+import Profile from '../Screens/Profile';
+import Settings from '../Screens/Settings';
 
 
 // import { MaterialCommunityIcons } from '@expo/vector-icons';
@@ -46,7 +50,7 @@ const BottomNavigation = () => {
 
 
       }} name='Quran' component={Home} />
-      <BottomTab.Screen options={{
+      {/* <BottomTab.Screen options={{
         tabBarShowLabel: false,
         headerShown: false,
         tabBarIcon: ({ focused }) => (
@@ -56,7 +60,7 @@ const BottomNavigation = () => {
           </View>
 
         )
-      }} name='Idea' component={CustomSplashScreen} />
+      }} name='Idea' component={CustomSplashScreen} /> */}
       <BottomTab.Screen options={{
         tabBarShowLabel: false,
         headerShown: false,
@@ -67,7 +71,7 @@ const BottomNavigation = () => {
           </View>
 
         )
-      }} name='Prayer' component={Login} />
+      }} name='Prayer' component={Prayer} />
       <BottomTab.Screen options={{
         tabBarShowLabel: false,
         headerShown: false,
@@ -78,15 +82,15 @@ const BottomNavigation = () => {
           </View>
 
         )
-      }} name='Dua' component={CustomSplashScreen} />
+      }} name='Dua' component={Dua} />
       <BottomTab.Screen options={{
         tabBarShowLabel: false,
         headerShown: false,
         tabBarIcon: ({ focused }) =>
           <View style>
-            <Image source={focused ? Images.BookMarkSelcted : Images.BookMark} />
+            <Image style={{height:40,objectFit:'contain',width:40}} source={focused ? Images.SettingsActive : Images.SettingsUnactive} />
           </View>
-      }} name='Bookmark' component={Login} />
+      }} name='Settings' component={Settings} />
     </BottomTab.Navigator>)
 }
 const DrawerNavigation = ({ navigation }) => {
@@ -124,13 +128,12 @@ const DrawerNavigation = ({ navigation }) => {
           }
       }}>
       <Drawer.Screen name="Home" component={StackNavigator} />
-      <Drawer.Screen name="Profile" component={Home} />
+      <Drawer.Screen name="Profile" component={Profile} />
       <Drawer.Screen name="Search" component={Search} />
 
     </Drawer.Navigator>
   )
 }
-
 const StackNavigator = () => {
   return (<Stack.Navigator  screenOptions={{headerShown:false}} initialRouteName='BottomTabs'>
     <Stack.Screen name='BottomTabs' component={BottomNavigation} />
@@ -140,10 +143,6 @@ const StackNavigator = () => {
   </Stack.Navigator>
   )
 }
-
-
-
-
 function NavigationCont() {
   const loading = useSelector((state) => state.loader.loader)
   return (
